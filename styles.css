@@ -1,0 +1,509 @@
+* {
+    font-family: Montserrat;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+
+/*header*/
+#header {
+    display: flex;
+    background-color: #02A28F;
+    height: 100%;
+    color: white;
+    padding: 1rem 9.5rem 1rem 9.5rem;
+}
+
+#header h1 {
+    position: relative;
+    font-size: 2.5rem; 
+    background: none;
+}
+
+
+
+/*Imagem de Destaque*/
+#post-destaque {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#post-destaque img {
+    width: fixed 10.5rem;
+    height: fixed 8.5rem;
+    margin-top: 3rem;
+    margin-left: 9.5rem;
+    padding: 1.5rem;
+}
+
+
+
+/*Post Populares*/
+#post-populares h2 {
+    background-color: #00a88f;
+    color: white;
+    margin-top: 5rem;
+    height: fixed 3rem;
+    width: 22.5rem;
+    border-radius: 0.7rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1.3rem;
+}
+
+#post-popular {
+    position: relative; 
+    top: 1.3rem;
+    right: 3.1rem;
+}
+
+.list-pop {
+    list-style: none;
+}
+
+#post-destaque {
+    display: flex;
+}
+
+#post-populares ul {
+    padding: 0rem;
+    left: -0.5rem;
+}
+
+#post-populares li {
+    background-color: white;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    height: 6rem;
+    width: 22.5rem; 
+}
+
+#post-populares li img {
+    background:none;
+    position: relative;
+    right: 10.6rem;
+    top: -3.7rem;
+}
+
+#post-popular h3 {
+    background: none;
+    font-size: 0.9rem;
+    position: relative;
+    top: -9.4rem;
+    left: 10rem;
+}
+
+#datatime {
+    background: none;
+    font-size: 0.9rem;
+    position: relative;
+    top: -9.4rem;
+    left: 10rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/*barra post recente*/
+#posts-recentes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem;
+    background-color: #00a88f;
+    color: white;
+    border-radius: 0.5rem;
+    padding:  1rem 1.5rem 1rem 1.5rem;
+    margin-left: 12.4rem;
+}
+
+/*cards de post recente conteudo*/
+#posts-recentes h3, a {
+    background: none;
+}
+
+#posts-recentes a {
+    color: white;
+}
+
+.postCard{
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.postCard img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.postConteudo {
+    padding: 1rem;
+}
+
+.postConteudo .tag {
+    color: #00a88f;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.postConteudo h4 {
+    color: black;
+    font-weight: bold;
+}
+
+.postConteudo .desc {
+    font-size: 0.8rem;
+    color: #616161;
+}
+
+#gridPost {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-left: 12.4rem;
+    text-align: left;
+}
+
+
+
+/*Categorias e post recente*/
+
+#inferiorSite{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.1rem;
+}
+
+
+/*barra categorias*/
+
+#lista {
+    left: 57.8rem;
+    gap: 0.9rem;
+    padding:  1.5rem 0rem 1.5rem 1.5rem;
+}
+
+/*Categorias*/
+
+#categorias {
+    border-radius: 0.5rem;
+    position: relative; 
+    top: -0.6rem;
+    font-style: bold;
+    font-size: 1.3rem;
+}
+
+#categorias li{
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+}
+
+
+#lista h4 {
+    margin-bottom: 1rem;
+    color: white;
+    background:#02A28F;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    width: 22.5rem;
+    height: 3.1rem;
+    gap: 0.6rem;
+    top: 7.5rem;
+    left: 57.8rem;
+    border-radius: 0.6rem;
+    justify-content: space-between;
+    size: 1.3rem;
+}
+
+#lista-categorias  {
+    list-style: none;
+    color: #616161;
+    text-align: left;
+    padding: 0rem;
+}
+
+#lista-categorias li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem; 
+    font-style: bold;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 35.6rem;
+}
+
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #02A28F;
+    color: white;
+    margin-top: 1.3rem;
+}
+
+footer p{
+    background: none;
+}
+
+
+
+/*tablet*/
+@media (max-width: 1440px) {
+
+  *{
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /*header*/
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #header h1 {
+    font-size: 2rem;
+  }
+
+  /*post destaque*/
+  #post-destaque {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  #postCapa {
+    max-width: 100%;
+    height: 100%; 
+  }
+
+  /*post populares*/
+  #post-populares h2 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  #post-populares li {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+
+  #post-populares li img {
+    width: 70%;
+    border-radius: 6px;
+  }
+
+   #datatime{
+    font-size: 1.2rem;
+    position: static;
+    width: 30%;
+    text-align: left;
+   }
+
+  #post-popular h3 {
+    font-size: 1.8rem;
+    width: 80%;
+    margin-top: 5rem ;
+    text-align: right;
+  }
+
+  /*posts eecentes*/
+  #posts-recentes {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  #gridPost {
+    padding: 1rem;
+  }
+
+ #gridPost h4{
+  font-size: 1.5rem;
+ }
+
+ #gridPost p{
+  font-size: 1.2rem;
+ }
+
+ #gridPost span{
+  font-size: 1.3rem;
+ }
+
+ #gridPost small{
+  font-size: 1.1rem;
+ }
+
+  /*categorias e parte inferior*/
+  #inferiorSite {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+
+  #lista {
+    padding: 1rem;
+    left: 0;
+  }
+
+  #lista h4 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #lista-categorias li {
+    padding-right: 0;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+
+  /*footer*/
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+ 
+
+/*celular*/
+@media (max-width: 768px) {
+
+  *{
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /*header*/
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #header h1 {
+    font-size: 2rem;
+  }
+
+  /*post destaque*/
+
+  #post-destaque img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 0;
+    border-radius: 8px;
+    align-items: center;
+    
+  }
+
+  /*post populares*/
+  #post-populares h2 {
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+    #post-populares h3 {
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  #post-populares li {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+  }
+
+  #post-populares li img {
+    position: static;
+    width: 70%;
+    height: auto;
+    margin-right: 10%;
+    border-radius: 6px;
+  }
+
+   #datatime {
+    font-size: 0.9rem;
+    position: static;
+    display: grid;
+    align-items: left;
+   }
+
+  #post-popular h3 {
+    position: static;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /*posts eecentes*/
+  #posts-recentes {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #gridPost {
+    padding: 1rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .postCard {
+    text-align: center;
+  }
+
+  /*categorias e parte inferior*/
+  #inferiorSite {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+
+  #lista {
+    padding: 1rem;
+    left: 0;
+  }
+
+  #lista h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #lista-categorias li {
+    padding-right: 0;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  /*footer*/
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
